@@ -1,4 +1,4 @@
-package com.forddev;
+package dev.ford.mobile;
 
 import android.app.Application;
 import android.util.Log;
@@ -10,6 +10,9 @@ import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
+
+import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
+import io.invertase.firebase.notifications.RNFirebaseNotificationsPackage;
 
 import java.util.List;
 
@@ -25,8 +28,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       @SuppressWarnings("UnnecessaryLocalVariable")
       List<ReactPackage> packages = new PackageList(this).getPackages();
-      // Packages that cannot be autolinked yet can be added manually here, for example:
-      // packages.add(new MyReactNativePackage());
+      // Packages that cannot be autolinked yet can be added manually here, for
+      // example:
+      packages.add(new RNFirebaseMessagingPackage());
+      packages.add(new RNFirebaseNotificationsPackage());
       return packages;
     }
 

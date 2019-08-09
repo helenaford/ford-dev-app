@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* FordDevTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FordDevTests.m */; };
+		0D05F18A22FE78850088A4F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D05F18922FE78850088A4F1 /* GoogleService-Info.plist */; };
+		0D2895F82307570E00BA17C5 /* no-bleed-sq-400.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2895F72307570E00BA17C5 /* no-bleed-sq-400.png */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -45,6 +47,9 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FordDevTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FordDevTests.m; sourceTree = "<group>"; };
 		095419AF3AAD2FB615FB5CAB /* Pods-FordDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FordDev.release.xcconfig"; path = "Target Support Files/Pods-FordDev/Pods-FordDev.release.xcconfig"; sourceTree = "<group>"; };
+		0D05F18922FE78850088A4F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "FordDev/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0D05F18B22FE791A0088A4F1 /* FordDev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = FordDev.entitlements; path = FordDev/FordDev.entitlements; sourceTree = "<group>"; };
+		0D2895F72307570E00BA17C5 /* no-bleed-sq-400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-bleed-sq-400.png"; path = "FordDev/no-bleed-sq-400.png"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* FordDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FordDev/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FordDev/AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +130,9 @@
 		13B07FAE1A68108700A75B9A /* FordDev */ = {
 			isa = PBXGroup;
 			children = (
+				0D2895F72307570E00BA17C5 /* no-bleed-sq-400.png */,
+				0D05F18B22FE791A0088A4F1 /* FordDev.entitlements */,
+				0D05F18922FE78850088A4F1 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -161,7 +169,6 @@
 				4963A551E7CD53980BD944D3 /* Pods-FordDevTests.debug.xcconfig */,
 				F90A607483E5F8165D97D751 /* Pods-FordDevTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -290,7 +297,23 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = HCP7F8U3L7;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = HCP7F8U3L7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -308,6 +331,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -338,6 +362,8 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				0D2895F82307570E00BA17C5 /* no-bleed-sq-400.png in Resources */,
+				0D05F18A22FE78850088A4F1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +609,7 @@
 			baseConfigurationReference = 4963A551E7CD53980BD944D3 /* Pods-FordDevTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HCP7F8U3L7;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -607,6 +634,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = HCP7F8U3L7;
 				INFOPLIST_FILE = FordDevTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -626,8 +654,12 @@
 			baseConfigurationReference = F6BDDE4139ACEC4A48C1798C /* Pods-FordDev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FordDev/FordDev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = HCP7F8U3L7;
 				INFOPLIST_FILE = FordDev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -635,8 +667,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ford.mobile;
 				PRODUCT_NAME = FordDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,7 +679,11 @@
 			baseConfigurationReference = 095419AF3AAD2FB615FB5CAB /* Pods-FordDev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FordDev/FordDev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCP7F8U3L7;
 				INFOPLIST_FILE = FordDev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -654,8 +691,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ford.mobile;
 				PRODUCT_NAME = FordDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -879,7 +917,7 @@
 				00E356F71AD99517003FC87E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FordDev" */ = {
 			isa = XCConfigurationList;
@@ -888,7 +926,7 @@
 				13B07F951A680F5B00A75B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FordDev-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -897,7 +935,7 @@
 				2D02E4981E0B4A5E006451C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FordDev-tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -906,7 +944,7 @@
 				2D02E49A1E0B4A5E006451C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FordDev" */ = {
 			isa = XCConfigurationList;
@@ -915,7 +953,7 @@
 				83CBBA211A601CBA00E9B192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
