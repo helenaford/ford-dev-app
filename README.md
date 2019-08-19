@@ -1,5 +1,5 @@
 # Ford.Dev Mobile
-For the blog ford.dev
+To the accompany the blog https://ford.dev
 
 ## Getting Started
 https://ford.dev/getting-started-with-react-native/
