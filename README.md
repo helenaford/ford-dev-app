@@ -1,7 +1,7 @@
 ![Github Repo Image](https://github.com/helenaford/ford-dev-assets/blob/master/github.jpg)
 
 
-# ford.Dev app
+# ford.DEV app
 To the accompany the blog https://ford.dev
 
 ## Getting Started
