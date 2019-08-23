@@ -5,11 +5,13 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "shake-android": "adb shell input keyevent 82"
   },
   "dependencies": {
     "react": "16.8.6",
-    "react-native": "0.60.4"
+    "react-native": "0.60.4",
+    "react-native-firebase": "^5.5.6"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

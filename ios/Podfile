@@ -28,6 +28,11 @@ target 'FordDev' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  # # Custom Pods
+  # ## Firebase
+
+ pod 'Firebase/Messaging', '~> 6.4.0'
+
   target 'FordDevTests' do
     inherit! :search_paths
     # Pods for testing
