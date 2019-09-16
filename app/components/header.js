@@ -14,17 +14,6 @@ import type { Node } from 'react';
 import { Text, StyleSheet, ImageBackground } from 'react-native';
 import React from 'react';
 
-export const Header = (): Node => (
-  <ImageBackground
-    accessibilityRole={'image'}
-    source={require('../assets/images/header.jpg')}
-    style={styles.background}
-    imageStyle={styles.logo}
-  >
-    <Text style={styles.text}>My React Native App</Text>
-  </ImageBackground>
-);
-
 const styles = StyleSheet.create({
   background: {
     paddingBottom: 80,
@@ -46,5 +35,16 @@ const styles = StyleSheet.create({
     textAlignVertical: 'center',
   },
 });
+
+export const Header = (): Node => (
+  <ImageBackground
+    accessibilityRole={'image'}
+    source={require('../assets/images/header.jpg')}
+    style={styles.background}
+    imageStyle={styles.logo}
+  >
+    <Text style={styles.text}>My React Native App</Text>
+  </ImageBackground>
+);
 
 export default { Header };
