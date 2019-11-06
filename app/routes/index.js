@@ -1,11 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
-import { Dimensions } from 'react-native';
-import {
-  createSwitchNavigator,
-  createAppContainer,
-  StackActions,
-} from 'react-navigation';
+import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import * as Screens from '../screens';
 
@@ -14,9 +8,12 @@ const AppStack = createStackNavigator(
     Home: {
       screen: Screens.Home,
     },
+    Notifications: {
+      screen: Screens.Notifications,
+    },
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Notifications',
     headerMode: 'none',
     transparentCard: true,
     gestureResponseDistance: 500,
@@ -35,7 +32,7 @@ const AppStack = createStackNavigator(
         shadowRadius: 0,
       },
     },
-  },
+  }
 );
 
 // needed if you have authentication
@@ -59,9 +56,7 @@ const Switch = createSwitchNavigator(
         shadowRadius: 0,
       },
     },
-  },
+  }
 );
 
 export default createAppContainer(Switch);
-
-/* eslint-enable react/prop-types */

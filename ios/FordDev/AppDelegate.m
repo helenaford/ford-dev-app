@@ -36,7 +36,7 @@
   // custom
   [FIRApp configure];
   [RNFirebaseNotifications configure];
-  
+
 
   return YES;
 }
@@ -52,16 +52,19 @@
 
 // custom
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+  NSLog(@"MyNotifPipeline Native | didReceiveLocalNotification");
   [[RNFirebaseNotifications instance] didReceiveLocalNotification:notification];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(nonnull NSDictionary *)userInfo
 fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler{
+  NSLog(@"MyNotifPipeline Native | didReceiveRemoteNotification");
   [[RNFirebaseNotifications instance] didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
 }
 
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
   [[RNFirebaseMessaging instance] didRegisterUserNotificationSettings:notificationSettings];
+  NSLog(@"MyNotifPipeline Native | didRegisterUserNotificationSettings");
 }
 
 
