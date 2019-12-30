@@ -1,21 +1,5 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
-import React, { Component, Fragment } from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  AsyncStorage,
-} from 'react-native';
+import React, { Component } from 'react';
+import { SafeAreaView, StyleSheet, ScrollView, View, Text, TouchableOpacity } from 'react-native';
 import {
   LearnMoreLinks,
   Colors,
@@ -29,15 +13,16 @@ console.disableYellowBox = true; // disable yellow box for tutorial purposes
 type Props = {};
 
 class Home extends Component<Props> {
-  //...
+  navigateNotifications = () => {
+    const { navigation } = this.props;
+    navigation.navigate('Notifications');
+  };
+
   render() {
     return (
-      <Fragment>
+      <>
         <SafeAreaView>
-          <ScrollView
-            contentInsetAdjustmentBehavior="automatic"
-            style={styles.scrollView}
-          >
+          <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
             <Header />
 
             {global.HermesInternal == null ? null : (
@@ -50,8 +35,8 @@ class Home extends Component<Props> {
               <View style={styles.sectionContainer}>
                 <Text style={styles.sectionTitle}>Step One</Text>
                 <Text style={styles.sectionDescription}>
-                  Edit <Text style={styles.highlight}>App.js</Text> to change
-                  this screen and then come back to see your edits.
+                  Edit <Text style={styles.highlight}>App.js</Text> to change this screen and then
+                  come back to see your edits.
                 </Text>
               </View>
               <View style={styles.sectionContainer}>
@@ -72,11 +57,16 @@ class Home extends Component<Props> {
                   Read the docs to discover what to do next:
                 </Text>
               </View>
+              <View>
+                <TouchableOpacity onPress={this.navigateNotifications}>
+                  <Text>Notifications</Text>
+                </TouchableOpacity>
+              </View>
               <LearnMoreLinks />
             </View>
           </ScrollView>
         </SafeAreaView>
-      </Fragment>
+      </>
     );
   }
 }

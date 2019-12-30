@@ -13,6 +13,7 @@ import com.facebook.soloader.SoLoader;
 
 import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
 import io.invertase.firebase.notifications.RNFirebaseNotificationsPackage;
+import io.invertase.firebase.instanceid.RNFirebaseInstanceIdPackage;
 
 import java.util.List;
 
@@ -32,6 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
       // example:
       packages.add(new RNFirebaseMessagingPackage());
       packages.add(new RNFirebaseNotificationsPackage());
+      packages.add(new RNFirebaseInstanceIdPackage());
       return packages;
     }
 

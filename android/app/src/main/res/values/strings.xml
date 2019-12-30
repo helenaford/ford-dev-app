@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FordDev</string>
+    <string name="default_notification_channel_id">test-channel</string> 
 </resources>
