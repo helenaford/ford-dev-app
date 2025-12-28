@@ -19,7 +19,7 @@
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "react": "16.8.6",
-    "react-native": "^0.60.4",
+    "react-native": "^0.82.1",
     "react-native-countdown-component": "^2.6.0",
     "react-native-firebase": "github:helenaford/react-native-firebase#v5.x.x",
     "react-native-gesture-handler": "^1.4.1",
